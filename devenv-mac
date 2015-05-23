@@ -162,7 +162,13 @@ pretty_print "Installing Grunt..."
   npm install -g grunt-cli
   
 pretty_print "Installing Yeoman"
-  npm install -g 
+  npm install -g yo
+  
+pretty_print "Installing Bower"
+  npm install -g bower
+  
+pretty_print "Installing Angular Generator"
+  npm install -g generator-angular
 
 #Install brew cask
 pretty_print "Installing cask to install apps"
