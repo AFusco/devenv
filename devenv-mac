@@ -14,16 +14,6 @@ pretty_print "Here we go..."
 
 # So it begins
 
-# Oh my zsh installation
-
-pretty_print "Installing oh-my-zsh..."
-  curl -L http://install.ohmyz.sh | sh
-
-# zsh fix
-if [[ -f /etc/zshenv ]]; then
-  pretty_print "Fixing OSX zsh environment bug ..."
-    sudo mv /etc/{zshenv,zshrc}
-fi
 
 # Homebrew installation
 
@@ -63,6 +53,17 @@ export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
 pretty_print "Installing git for version control"
   brew install git
+  
+  # Oh my zsh installation
+
+pretty_print "Installing oh-my-zsh..."
+  curl -L http://install.ohmyz.sh | sh
+
+# zsh fix
+if [[ -f /etc/zshenv ]]; then
+  pretty_print "Fixing OSX zsh environment bug ..."
+    sudo mv /etc/{zshenv,zshrc}
+fi
 
 # Posgresql installation
 
