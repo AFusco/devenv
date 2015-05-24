@@ -191,6 +191,7 @@ apps=(
   vlc
   google-drive
   tomighty
+  pgadmin3
 )
 
 for app in "${apps[@]}"
