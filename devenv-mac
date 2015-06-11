@@ -178,7 +178,6 @@ pretty_print "Installing launchrocket to manage your homebrew formulas like a ch
 	brew cask install launchrocket
 	
 #Install apps
-# List of apps we use at Icalia Labs
 apps=(
   spotify
   google-chrome
@@ -192,6 +191,7 @@ apps=(
   google-drive
   tomighty
   pgadmin3
+  xld
 )
 
 for app in "${apps[@]}"
